@@ -1,0 +1,139 @@
+/* Importar Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:ital,wght@1,300;1,400&display=swap');
+
+/* Estilo general */
+body {
+    margin: 0;
+    background: #e7ecfa; /* Más suave y elegante */
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(90deg, #1E3A8A, #1E40AF);
+    color: white;
+    text-align: center;
+    padding: 28px;
+    letter-spacing: 1px;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #1E3A8A;
+    padding: 14px;
+    text-align: center;
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+    border-bottom: 3px solid #0d224d;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #cdd8ff;
+    text-shadow: 0 0 6px white;
+}
+
+/* Contenido principal */
+main {
+    display: flex;
+    gap: 22px;
+    padding: 25px;
+    align-items: stretch; /* ✅ Hace que todas las secciones tengan la misma altura */
+}
+
+/* Columnas */
+section {
+    flex: 1;
+    background: white;
+    padding: 18px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+    text-align: center;
+
+    display: flex;             /* ✅ Para permitir que el contenido se distribuya */
+    flex-direction: column;
+}
+
+/* Imágenes */
+section img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+section img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+}
+
+/* Título de sección */
+section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+}
+
+/* Artículos */
+article {
+    border: 1px solid #d4d9e8;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: #f9fbff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+/* Título dentro del artículo */
+article h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 0 6px 0;
+}
+
+/* Texto dentro del artículo */
+article p {
+    margin-top: 3px;
+    line-height: 1.5;     /* ✅ Interlineado correcto */
+    font-size: 14px;
+    text-align: justify;  /* ✅ Alinear a ambos lados */
+    hyphens: auto;        /* ✅ Palabras no se deforman */
+    padding: 0 4px;       /* ✅ Sin tocar el borde */
+}
+
+/* Hover artículo */
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.22);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #1E3A8A, #1E40AF);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+}
+
+
