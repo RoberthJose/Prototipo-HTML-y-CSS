@@ -135,5 +135,61 @@ footer {
     margin-top: 20px;
     letter-spacing: 0.5px;
 }
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/* Tablets (pantallas medianas) */
+@media (max-width: 992px) {
+    main {
+        flex-direction: column;
+        padding: 18px;
+    }
+
+    section img {
+        height: 180px;
+    }
+}
+
+/* Celulares (pantallas pequeñas) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    main {
+        flex-direction: column;
+        gap: 18px;
+        padding: 14px;
+    }
+
+    section {
+        padding: 14px;
+    }
+
+    section img {
+        height: 160px;
+    }
+
+    article {
+        padding: 8px 10px;
+    }
+
+    article p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+}
+
 
 
